@@ -67,67 +67,42 @@
 
     <header class="page-header dark bg-img">
       <div class="container">
-        <h4>Contacto</h4>
+        <h4>Nuestros productos</h4>
       </div><!-- cierra contaciner -->
     </header>
+    <div class="col-md-12 col-sm-12">
+      <div id="app">                
+        <div class="filtro">
+          <div class="container">
+            <p>FILTRAR POR:
+              <select v-model="productosrubik" name="productosrubik" id="" >
+                <option  id="productosrubik" v-for="productosrubik of tratamientos" >{{productosrubik}}</option>
+              </select>
+              <button class="btn btn-success" v-on:click="filtro() ">Buscar</button> 
+              <button class="btn btn-secondary" @click="orden()">Ordenar por precio</button>
+            </p>
+          </div>
+        </div>
 
- <div class="container">
-      <div class="row">
-        <div class="bg-white pt-5 text-center">
-          <h3><span>Estamos</span>en<span>contacto</span></h3>
-          <p class="text-center">Enviamos tu consulta y te contactamos para darte la mejor solución en el menor tiempo posible.</p>
-</div><!-- cierra bg-white-->
-      </div><!-- cierra row-->
-    </div><!-- cierra container-->
-    <div class="col-md-8 offset-md-2 py-5 text-center">
-      <form id= "form" method="POST" name="form" accept-charset="UTF-8" action="#"> 
-        <div class="container">
-          <div class="row">   
-            <div class="col-lg-6 col-md-12">
-              <div class="form-group">
-                <label for="nombre" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Nombre:<strong>(*)</strong></label>
-                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" name="nombre" required="required">
-              </div><!-- cierra form-group -->    
-              <div class="form-group">
-                <label for="email" class="form-label"><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>Apellido: <strong>(*)</strong></label>
-                <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" name="apellido" required="required"> 
-              </div><!-- cierra form-group -->
-            </div><!-- cierra col -->
-            <div class="col-lg-6 col-md-12">
-              <div class="form-group">
-                <label for="email" class="form-label"><i class="fa-sharp fa-solid fa-envelope-circle-check" ></i>Email: <strong>(*)</strong></label>
-                <input class="form-control" type="email" id="email" name="email" placeholder="Ingresá tu email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required="required"> 
-              </div><!-- cierra form-group -->
-              <div class="form-group">
-                <label for="tel" class="form-label"><i class="fa-solid fa-mobile-retro"></i>Teléfono: <strong>(*)</strong></label>
-                <input class="form-control" type="tel" maxlength="15" id="tel" name="telefono" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono" pattern="[9|8|7|6|5|4|3|2|1|0]{7,16}" required="required"> 
-              </div><!-- cierra form-group -->
-            </div><!-- cierra col -->
-            <div class="col-lg-12 col-md-12">
-              <div class="form-group">
-                <label>Mensaje</label>
-                <textarea rows="3" required="required"></textarea><span class="border-bottom-input"></span>
-              </div><!-- cierra form-group -->
-              <button type="submit" class="btn btn-primary" onclick="validarform()">Enviar mensaje<i class="bi bi-arrow-right-circle-fill"></i></button>
-              <button type="reset" class="reset">Borrar datos<i class="bi bi-trash3-fill"></i></button>        
-            </div><!-- cierra col -->
-          </div><!-- cierra row -->
-        </div><!-- cierra container -->
-      </form>
-    </div><!-- cierra col -->
+        <section class="lista-productos">
+          <div class="container">
+            <div v-for="producto of productos" class="card" style="width:31%; float:left; margin:1% 1%">
+              <img class="card-img-top" :src="producto.imagen" alt="Card image">
+              <div class="card-body">
+                <p class="card-text" style="text-transform:uppercase; color:#E08582">{{producto.productosrubik}}</p>
+                <h4 class="card-title">{{producto.nombre}}</h4>
+                <p class="card-text">Descripcion:{{producto.descripcion}}</p>                                
+                <p class="card-text" style="font-weight: 500; font-size: 2rem;color:#000">${{producto.precio}}</p>
+                <a href="#" class="btn btn-primary">Ver Producto</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>  
 
 
-<div class="social">
-    <ul>
-      <li><a href="http://www.facebook.com" target="_blank" class="facebook bi bi-facebook"></a></li>
-      <li><a href="http://www.instagram.com" target="_blank" class="instagram bi-instagram"></a></li>
-      <li><a href="http://www.whatsapp.com" target="_blank" class="whatsapp bi bi-whatsapp"></a></li>
-    </ul>
-  </div>
-
-
-
-    <footer >
+     <footer >
       <div class="container py-5">
         <div class="flex">
           <div class="col-lg-2 col-md-12">
@@ -140,9 +115,9 @@
             <ul>
               <li><a href=""><i class="bi bi-house-door-fill icono-home"></i></a></li>
               <li><a href="quienes-somos.html">Somos Rubik</a></li>
-              <li><a href="productos.html">Nuestros productos</a></li>
+              <li><a class="productos" href="productos.html">Nuestros productos</a></li>
               <li><a href="pawik.html">¿Qué es Pawik?</a></li>
-              <li><a class="active" href="contacto.html">Contactanos</a></li>
+              <li><a href="contacto.html">Contactanos</a></li>
             </ul>  
           </div>
 
@@ -183,4 +158,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
   <script src="./script.js"></script>
 </body>
-</html>
+</html>      
