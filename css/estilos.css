@@ -1486,7 +1486,6 @@ footer a.active {
   }
   .navbar-nav li a,
   .scrolled .navbar-nav li a {
-    border-bottom: 2px solid #fff;
     padding: 26px 15px;
   }
   .carousel-home .carousel-texto h2 {
