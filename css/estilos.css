@@ -10,9 +10,6 @@ main .parallax {
   justify-content: center;
   align-items: normal;
   transition: 0.8s;
-  -webkit-box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
-  -moz-box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
-  box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
 }
 main .parallax:before {
   content: "";
@@ -1098,15 +1095,35 @@ select {
 
 
 /*PAWIK*/
+.como-funciona {
+  background-color: #6A2382;
+}
+.como-funciona .bg-white {
+  background-color: #6A2382 !important;
+}
+.como-funciona .bg-white h3 {
+  color: #fff !important;
+}
+.huellas {
+  background-image: url(../imagenes/pawik/textura03.png);
+  background-repeat: repeat;
+  height: 200px;
+  width: 100%;
+  opacity: 0.2;
+}
 #portada {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../imagenes/pawik/portada.jpg) no-repeat center;
+  background: rgb(230,0,126);
+  background: radial-gradient(circle, rgba(0,0,0,.4) 0%, rgba(106,35,130,.8) 100%) , url(../imagenes/pawik/portada02.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;  
+  -webkit-box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
+  -moz-box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
+  box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
 }
 .tit1 {
     font-family: 'Sofia', cursive;
@@ -1122,6 +1139,123 @@ select {
   width: 250px;
   display: block;
 }
+.huellitas {
+  background-image: url(../imagenes/pawik/huellaspng.png);
+    background-repeat: repeat;
+    height: 250px;
+    width: 100%;
+    opacity: 0.2;
+}
+.huella-violeta {
+  position: relative;
+  top: -150px;
+  height: 200px;
+  float: right;
+}
+.huella-blanca {
+  position: relative;
+  top: -150px;
+  height: 150px;
+  float: left;
+  z-index: 999;
+}
+.pasos-chapitas-qr {
+  margin: 0 10px;
+  padding: 15px;
+  text-align: center;
+  /*background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(4.5px);*/
+  border-radius: 1rem !important;
+  flex-basis:100%;
+}
+.pasos-chapitas-qr h4{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 30px;
+  color: #e6007e;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.pasos-chapitas-qr h4 {
+  margin-top: 20px;
+}
+.pasos-chapitas-qr p{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #5d5d5d;
+  font-weight: 400;
+  line-height: 24px;
+}
+.pasos-chapitas-qr .btn {
+  top: 0;
+}
+.pasos-chapitas-qr img {
+  padding: 0 25px ;
+  border-radius: 50%;
+  background-color: #e6007e;
+}
+.pasos-chapitas-qr img {
+  --f: .1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+  
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 250px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+}
+.pasos-chapitas-qr img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+.variedad-chapitas {
+  background-image: url(../imagenes/pawik/textura03.png);
+  background-repeat: repeat;
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+  position: relative;
+  display: block;
+  background-attachment: fixed;
+}
+.variedad-chapitas:before {
+ width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.9);
+}
+.variedad-chapitas h3 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 45px;
+  color: #e6007e;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 5px 5px 5px #bfbdbd;
+  position: relative;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1497,6 +1631,10 @@ footer a.active {
   .nuestros-productos {
     padding: 45px 0;
   }
+  .huella-blanca {
+    height: 100px;
+    top:-80px;
+  }
 }
 
 @media (max-width: 550px) {   
@@ -1506,6 +1644,10 @@ footer a.active {
  .redes-sociales ul {
   flex-direction: row;
   margin:0;
+  }
+  .huella-blanca {
+    height: 100px;
+    top:-80px;
   }
 }
 
@@ -1530,5 +1672,8 @@ footer a.active {
   }
   .btn, .reset {
     font-size: 13px;
+  }
+  .footer-bottom .copyright {
+    font-size: 10px;
   }
 }
