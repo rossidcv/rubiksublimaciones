@@ -50,10 +50,10 @@
                 Nuestros productos<i id="flecha" class="bi bi-caret-down-fill"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Indumentaria </a></li>
-                <li><a class="dropdown-item" href="#">Bazar</a></li>
-                <li><a class="dropdown-item" href="#">Regalería</a></li>
-                <li><a class="dropdown-item" href="#">Varios</a></li>
+                <li><a class="dropdown-item" href="productos.html">Indumentaria </a></li>
+                <li><a class="dropdown-item" href="productos.html">Bazar</a></li>
+                <li><a class="dropdown-item" href="productos.html">Regalería</a></li>
+                <li><a class="dropdown-item" href="productos.html">Varios</a></li>
               </ul>
             </li>            
             <li class="nav-item">
@@ -79,7 +79,7 @@
                 <option  id="productosrubik" v-for="productosrubik of tratamientos" >{{productosrubik}}</option>
               </select>
               <button class="btn btn-success" v-on:click="filtro() ">Buscar</button> 
-              <button class="btn btn-secondary" @click="orden()">Ordenar por precio</button>
+              <button class="btn btn-secondary" @click="orden()">Ordenar por categoría</button>
             </p>
           </div>
         </div>

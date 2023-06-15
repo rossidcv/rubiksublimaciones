@@ -1154,10 +1154,10 @@ select {
 }
 .huella-blanca {
   position: relative;
-  top: -150px;
+  top: 150px;
   height: 150px;
   float: left;
-  z-index: 999;
+  z-index: 9999;
 }
 .pasos-chapitas-qr {
   margin: 0 10px;
@@ -1524,7 +1524,7 @@ footer a.active {
     margin-top: 5px;
   }*/
   .logo-color {
-    margin-top: 0px;
+    margin-top: 5px;
     max-height: 40px;
   }
   .scrolled .logo-color {
@@ -1535,9 +1535,12 @@ footer a.active {
   .scrolled .logo-blanco {
     opacity: 0;
   }
+  .navbar {
+    background-color: #000;
+  }
   .navbar-nav {
-    position: fixed;
-    background: #000;
+   background: rgba(0,0,0,0.9);
+    backdrop-filter: blur(4.5px);
     height: 100vh;
     width: 100%;
     top: 0;
@@ -1546,7 +1549,7 @@ footer a.active {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
-    display: flex;
+    display: block;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
@@ -1556,6 +1559,7 @@ footer a.active {
     -webkit-clip-path: circle(1000px at 80% -10%);
     pointer-events: all;
     z-index: -99999;
+    flex-direction:space-evenly;
   }
   nav {
     height: 10vh;
@@ -1564,6 +1568,9 @@ footer a.active {
   .hamburger {
     display: block;
     z-index: 999;
+  }
+  .dropdown {
+    width: 100%;
   }
   #nav-contacto {
     position: absolute;
@@ -1608,7 +1615,7 @@ footer a.active {
   .navbar-nav .dropdown-menu li a,
   .navbar-nav .scrolled .navbar-nav .dropdown-menu li a {
     color: #FFF !important;
-    padding: 24px 10px;
+    padding: 15px 10px;
   }
   .scrolled .navbar-nav li a.active {
     padding: 15px 10px;
@@ -1617,10 +1624,6 @@ footer a.active {
   .scrolled .navbar-nav li a.active {
     position: relative;
     top: -2px;
-  }
-  .navbar-nav li a,
-  .scrolled .navbar-nav li a {
-    padding: 26px 15px;
   }
   .carousel-home .carousel-texto h2 {
     font-size: 45px;
