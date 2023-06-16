@@ -1154,10 +1154,10 @@ select {
 }
 .huella-blanca {
   position: relative;
-  top: 150px;
   height: 150px;
   float: left;
-  z-index: 9999;
+  z-index: 1000;
+  margin-bottom: -150px;
 }
 .pasos-chapitas-qr {
   margin: 0 10px;
@@ -1538,6 +1538,7 @@ footer a.active {
   }
   .navbar {
     background-color: #000;
+    z-index: 9999;
   }
   .navbar-nav {
    background: rgba(0,0,0,0.9);
@@ -1590,6 +1591,10 @@ footer a.active {
   .bg-white {
     width: 100%;
   }
+  .bg-white p {
+    width: 100%;
+  }
+
   .nuestros-productos .flex {
     flex-direction: column;
   }
@@ -1637,7 +1642,6 @@ footer a.active {
   }
   .huella-blanca {
     height: 100px;
-    top:-80px;
   }
 }
 
@@ -1651,7 +1655,6 @@ footer a.active {
   }
   .huella-blanca {
     height: 100px;
-    top:-80px;
   }
   .nuestros-productos,
   .overlay {
