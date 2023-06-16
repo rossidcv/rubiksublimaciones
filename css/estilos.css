@@ -1121,6 +1121,9 @@ select {
   -moz-box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
   box-shadow: -4px 13px 5px -8px rgba(179,179,179,1);
 }
+#portada a {
+  display: inline-block;s
+}
 .tit1 {
     font-family: 'Sofia', cursive;
     font-size: 4em;
@@ -1178,7 +1181,7 @@ select {
 .pasos-chapitas-qr p{
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-  color: #5d5d5d;
+  color: #fff;
   font-weight: 400;
   line-height: 24px;
 }
