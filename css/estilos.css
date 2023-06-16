@@ -927,6 +927,7 @@ ul, li, a {
   
   --_f: calc(100%*var(--f)/(1 + var(--f)));
   --_a: calc(90deg*var(--f));
+  height: 238px;
   width: 250px; /* the image size */
   aspect-ratio: calc(1 + var(--f));
   object-fit: cover;
@@ -1110,7 +1111,7 @@ select {
   height: 100vh;
   width: 100%;
   background: rgb(230,0,126);
-  background: radial-gradient(circle, rgba(0,0,0,.4) 0%, rgba(106,35,130,.8) 100%) , url(imagenes/pawik/portadapawik.jpg) no-repeat center;
+  background: radial-gradient(circle, rgba(0,0,0,.4) 0%, rgba(106,35,130,.8) 100%) , url(../imagenes/pawik/portadapawik.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -1647,6 +1648,10 @@ footer a.active {
   .huella-blanca {
     height: 100px;
     top:-80px;
+  }
+  .nuestros-productos,
+  .overlay {
+    padding: 0;
   }
 }
 
