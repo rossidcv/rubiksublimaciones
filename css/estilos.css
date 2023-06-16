@@ -1111,7 +1111,7 @@ select {
   height: 100vh;
   width: 100%;
   background: rgb(230,0,126);
-  background: radial-gradient(circle, rgba(0,0,0,.4) 0%, rgba(106,35,130,.8) 100%) , url(../imagenes/pawik/portadapawik.jpg) no-repeat center;
+  background: radial-gradient(circle, rgba(0,0,0,.9) 0%, rgba(106,35,130,.5) 100%) , url(../imagenes/pawik/portadapawik.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -1137,6 +1137,7 @@ select {
 .logopawik {
   width: 250px;
   display: block;
+  margin: 0 auto;
 }
 .huellitas {
   background-image: url(../imagenes/pawik/huellaspng.png);
