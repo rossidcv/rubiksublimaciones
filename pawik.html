@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bienvenidos a Rubik Sublimaciones</title>
+  <title>Rubik Sublimaciones ... Pawik ...</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
   <!-- Fonts -->
@@ -14,10 +14,11 @@
   <script src="assets/js/parallax.js" type="text/javascript"></script>
 
   <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
-  <script src="js/funciones.js"></script>
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
@@ -57,8 +58,8 @@
                 <li><a class="dropdown-item" href="productos.html">Varios</a></li>
               </ul>
             </li>            
-             <li class="nav-item">
-              <a class="nav-link" href="pawik.html">¿Qué es Pawik?</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="pawik.html">¿Qué es Pawik?</a>
             </li>             
           </ul>
         </div><!-- cierra collapse -->                
@@ -71,143 +72,522 @@
     <div id="portada" class="objet ">
       <div class="content">                
         <img class="logopawik" src="imagenes/logo/pawik/logo-color.png">
-<a class="btn btn-default btn animate__animated animate__slideInUp" href="#que-es-pawik" role="button">¿Qué es Pawik?</a>
-<a class="btn btn-default btn animate__animated animate__slideInUp" href="#como-funciona" role="button">¿Cómo funciona?</a>
-   
+        <a class="btn btn-default btn animate__animated animate__slideInUp" href="#que-es-pawik" role="button">¿Qué es Pawik?</a>
+        <a class="btn-funcion btn-default btn animate__animated animate__slideInUp" href="#como-funciona" role="button">¿Cómo funciona?</a>
+
       </div><!-- cierra content -->
     </div><!-- cierra portada -->
 
+
+
+<div class="fondo-gris">
+
+    <div class="elementor-shape2 elementor-shape-bottom" data-negative="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+        <path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+        <path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+      </svg>
+    </div><!-- cierra elementor-shape -->
+
+
+
+
     <section id="que-es-pawik">
-          <div class="container py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="bg-white text-center" style="width: 65%">
+            <h3><span>¿Qué</span>es<span>Pawik?</span></h3>
+            <p class="text-center">Es una chapita identificatoria con código QR donde se encuentran los datos necesarios de tu mascota. En caso de que tu mascota se pierda, alguien puede escanear el QR y lograr el contacto con vos para el reencuento.</p>
+          </div><!-- cierra bg-white-->
+        </div><!-- cierra row-->
+      </div>
+    </section>
+
+
+
+    <section id="que-es-pawik">
+      <div class="container">
+        <div class="flex">
+          <div class="col order-1 order-lg-1 left">
+            <div class="bg-white">
+              <div class="texto-contenido">
+          <ul>
+            <li><i class="bi bi-check2-circle"></i><h4>Información actualizada: </h4><br>
+              <p>Los datos cargados están actualizados. Allí podrás cargar información del estado de salud de tu mascota, si está en tratamiento, tiene enfermedades, etc.</p> 
+            </li>
+            <li><i class="bi bi-telephone"></i><h4>Contacto directo con el dueño de la mascota:</h4><br> 
+              <p> Podrás comunicarte directamente por Whatsapp con el dueño de la mascota y así coordinar lugar y horario para el reencuentro.</p>
+            </li>
+            
+          </ul>
+        </div><!-- cierra imagen-contenido-->
+            </div><!-- cierra bg-white-->
+          </div>
+          <div class="col order-3 order-lg-2">
+            <div class="imagen-contenido">
+           
+              <img src="imagenes/pawik/f.png">
+
+          </div>  </div> 
+          <div class="col  order-2 order-lg-">
+            <div class="bg-white">
+              <div class="texto-contenido">
+          <ul>
+            
+            <li><i class="bi bi-hourglass-bottom"></i><h4>Rapidez en los reencuentro:</h4> <br>
+              <p> Las Chapitas Pawik logran que tu mascota sea identificada y localizada de manera inmediata para que vuelva lo más rápido posible a su hogar.</p>
+            </li>
+            <li><i class="bi bi-gear"></i><h4>Sin Instalaciones en los dispositivos:</h4> <br>
+              <p> No es necesario que instales nada en tu celular, sólo tiene que abrir la cámara integrada para poder leer el QR de la Chapita Pawik. </p>
+            </li>
+          </ul>
+        </div><!-- cierra imagen-contenido-->
+            </div><!-- cierra bg-white-->
+          </div>        
+        </div><!-- cierra row-->
+      </div>
+    </section>
+
+
+
+
+
+<section id="como-funciona">
+  <div class="como-funciona py-5">
+    <div class="container py-5 text-center">
+      <div class="bg-white">
+        <h3>¿Cómo funciona Pawik?</h3>
+      </div><!-- cierra bg-white -->
+    </div><!-- cierra container -->   
+
+    <!--<img class="huella-violeta" src="imagenes/pawik/huellavioleta.png">-->   
+
+
+    <div class="container">
+      <div class="flex">
+        <div class="col">
+          <div class="pasos-chapitas-qr">
+            <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/assets/media/images/types/vcard-plus/CasesvCardplus-Mockup-Personal.png" alt="an eagle" style="--f:.12;--r:5px">
+            <h4 class="title">Paso 1</h4>
+            <p class="text">Si ves un animal perdido buscá su chapita QR Identificatoria Pawik. Allí verás un código QR para escanear.</p>
+          </div><!-- cierra pasos-chapitas-qr -->
+        </div><!-- cierra col -->
+        <div class="col">
+          <div class="pasos-chapitas-qr">
+            <img src="https://sc04.alicdn.com/kf/HTB1afGjPpXXXXbcapXXq6xXFXXX2.jpg" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px">
+            <h4 class="title">Paso 2</h4>
+            <p class="text">Al leer el código de la chapita aparecerán sus datos de contacto e información relevante del animal.</p>
+          </div><!-- cierra pasos-chapitas-qr -->
+        </div><!-- cierra col -->
+        <div class="col">
+          <div class="pasos-chapitas-qr">
+            <img src="https://us.123rf.com/450wm/irinashatilova/irinashatilova2106/irinashatilova210600411/170638134-pantalla-de-tel%C3%A9fono-inteligente-con-aplicaci%C3%B3n-de-pasaporte-de-salud-digital-persona-vacunada-que.jpg?ver=6" class="card-img-top mb-30" alt="...">
+            <h4 class="title">Paso 3</h4>
+            <p class="text">Podés comunicarte con el dueño del animal mediante el botón de Watsapp que aparece en los datos del QR.</p>
+          </div><!-- cierra pasos-chapitas-qr -->
+        </div><!-- cierra col -->
+      </div><!-- cierra flex -->
+    </div><!-- cierra container -->
+  </div><!-- cierra overlay -->
+
+</section>
+
+
+
+<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+    <path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+    <path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+  </svg>
+</div><!-- cierra elementor-shape -->
+
+
+
+
+
+<div class="perros">
+  <!--<img class="huella-blanca-2" src="imagenes/pawik/png.png">-->
+<!--<img class="huella-blanca-5" src="imagenes/pawik/huellitas05.png">-->
+</div>
+
+
+
+
+    <div class="container pb-5"><div class="container">
       <div class="row">
-        <div class="bg-white py-5 text-center">
-          <h3><span>¿Qué</span>es<span>Pawik?</span></h3>
-          <p class="text-center">Es una chapita identificatoria con código QR donde se encuentran los datos necesarios de tu mascota. En caso de que tu mascota se pierda, alguien puede escanear el QR y lograr el contacto con vos para el reencuento.</p>
+        <div class="bg pt-5 text-center">
+          <h4><span>¿Qué datos contiene el QR?</span></h4>
         </div><!-- cierra bg-white-->
       </div><!-- cierra row-->
     </div>
-</section>
+    <div class="flex">
+      <div class="col">
+        <div class="texto-contenido">
+          <ul>
+            <li><i class="bi bi-search"></i><h4>N* de Identificación:</h4> <br>
+              <p> Los datos que brindes sobre tu mascota serán cargados y guardados en una ficha la cual tendrá un número de identificación que funcionará como "el DNI". De esa manera será más facil y útil encontrar tu ficha en nuestra base de datos para una mejor organización.</p>
+            </li>
+            <li><i class="bi bi-camera"></i><h4>Foto de la mascota: </h4><br>
+              <p>En la ficha donde se cargarán los datos podrás agregar la imagen de tu mascota. De esa manera su perfil estará completo y personalizado.</p> 
+            </li>
+            <li><i class="bi bi-heart"></i><h4>Nombre de la mascota:</h4><br> 
+              <p> Es fundamental que en los datos que brindes esté el nombre de tu mascota.</p>
+            </li>
+          </ul>
+        </div><!-- cierra imagen-contenido-->
+      </div><!-- cierra col-->
+
+      <div class="col">
+        <div class="imagen-contenido">
+          <img src="https://img.freepik.com/psd-premium/maqueta-pantalla-telefono-inteligente-psd-que-muestra-codigo-qr_53876-123305.jpg?w=2000" class="card-img-top mb-30" alt="...">
+        </div><!-- cierra texto-contenido-->
+      </div><!-- cierra col-->
+
+      <div class="col">
+        <div class="texto-contenido">
+          <ul>
+            <li><i class="bi bi-file-check"></i><h4>Datos de su salud:</h4> <br>
+              <p>Podés brindar información sobre tratamientos de salud, enfermedad o patología de tu mascota, etc. De esa manera la persona que lo encuentre verá si considera necesario acercar a la mascota a un centro veterinario para su evaluación. </p>
+            </li>
+
+            <li><i class="bi bi-house"></i><h4>Veterinaria:</h4> <br>
+              <p> Podrás detallar a que Veterinaria acude tu mascota por si es necesario acudir a la misma. </p>
+            </li>
+            <li><i class="bi bi-telephone"></i><h4>Telefono del dueño:</h4> <br>
+              <p> El único dato privado cargado será el teléfono como medio de contacto.<em> (Consideramos que por razones de seguridad no pediremos  otro dato que pueda ser vulnerable. Los datos extras para el reencuentro corren por parte de ambas partes.</em> </p>
+            </li>
+          </ul>
+        </div><!-- cierra imagen-contenido-->
+      </div><!-- cierra col-->
+    </div><!-- cierra row-->
+  </div><!-- cierra container-->
+
+
+
+
+
+  <div class="imagen-dog">
+
+    <div class="dog">
+      <div class="dog-body">
+        <div class="dog-tail">
+          <div class="dog-tail">
+            <div class="dog-tail">
+              <div class="dog-tail">
+                <div class="dog-tail">
+                  <div class="dog-tail">
+                    <div class="dog-tail">
+                      <div class="dog-tail">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dog-torso">
+      </div>
+      <div class="dog-head">
+        <div class="dog-ears">
+          <div class="dog-ear">
+          </div>
+          <div class="dog-ear">
+          </div>
+        </div>
+        <div class="dog-eyes">
+          <div class="dog-eye">
+          </div>
+          <div class="dog-eye">
+          </div>
+        </div>
+        <div class="dog-muzzle">
+          <div class="dog-tongue">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ball" tabindex="0">
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <img class="huella-blanca" src="imagenes/pawik/png.png">
 
 
- <section class="parallax">
-      <img src="imagenes/pawik/fo.jpg" id="bg" />
-      <div class="container">
-        <h3 id="text"><span>Chapitas Pawik</span></h3>
-      </div>
-      <img src="imagenes/pawik/f.png" id="man" class="personaje" />
-      <img src="imagenes/pawik/huellitas-001.png" id="clouds_1" />
-      <img src="imagenes/pawik/huellitas-002.png" id="clouds_2" />
-    </section>
-
-
-
- <section id="como-funciona">
-    <div class="como-funciona py-5">
-            <div class="container py-5 text-center">
-      <div class="bg-white">
-        <h3>¿Cómo funciona Pawik?</h3>
-      </div><!-- cierra bg-white -->
-        </div><!-- cierra container -->   
-
-      <!--<img class="huella-violeta" src="imagenes/pawik/huellavioleta.png">-->   
-
-        
-      <div class="container">
-        <div class="flex">
-          <div class="col">
-            <div class="pasos-chapitas-qr">
-              <img src="https://es.qr-code-generator.com/wp-content/themes/qr/new_structure/assets/media/images/types/vcard-plus/CasesvCardplus-Mockup-Personal.png" alt="an eagle" style="--f:.12;--r:5px">
-              <h4 class="title">Paso 1</h4>
-              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div><!-- cierra pasos-chapitas-qr -->
-          </div><!-- cierra col -->
-          <div class="col">
-            <div class="pasos-chapitas-qr">
-              <img src="https://sc04.alicdn.com/kf/HTB1afGjPpXXXXbcapXXq6xXFXXX2.jpg" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px">
-              <h4 class="title">Paso 2</h4>
-              <p class="text">Al leer el código de la chapita aparecerán sus datos de contacto e información relevante del animal.</p>
-            </div><!-- cierra pasos-chapitas-qr -->
-          </div><!-- cierra col -->
-          <div class="col">
-            <div class="pasos-chapitas-qr">
-              <img src="https://us.123rf.com/450wm/irinashatilova/irinashatilova2106/irinashatilova210600411/170638134-pantalla-de-tel%C3%A9fono-inteligente-con-aplicaci%C3%B3n-de-pasaporte-de-salud-digital-persona-vacunada-que.jpg?ver=6" class="card-img-top mb-30" alt="...">
-              <h4 class="title">Paso 3</h4>
-              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div><!-- cierra pasos-chapitas-qr -->
-          </div><!-- cierra col -->
-        </div><!-- cierra flex -->
-      </div><!-- cierra container -->
-    </div><!-- cierra overlay -->
-  </div>   
-    </div><!-- cierra como-funciona -->
-
+<section class="parallax">
+  <img src="imagenes/pawik/portadapawik.jpg" id="bg" />
+  <div class="container">
+    <h3 id="text"><span>Cuidamos a tu mascota</span></h3>
+  </div>
+  <img src="imagenes/pawik/f.png" id="man" class="personaje" />
+  <img src="imagenes/pawik/huellitas-001.png" id="clouds_1" />
+  <img src="imagenes/pawik/huellitas-002.png" id="clouds_2" />
 </section>
-    
-       <!--<div class="huellas"></div><!-- cierra huellas -->
 
-          <div class="variedad-chapitas">
-                  <div class="container py-5">
-      </div><!-- cierra container -->
 
-          </div><!-- cierra variedad-chapitas -->
 
-    <footer >
-      <div class="container py-5">
-        <div class="flex">
-          <div class="col-lg-2 col-md-12">
-            <div class="logo-footer">
-              <a href="index.html"><img src="imagenes/logo/logo-rubik-alternativo.png"></a>
+
+
+
+
+
+
+
+
+
+<div class="lista-medios-de-pago">
+  <div class="container bg py-5 text-center">
+    <div class="col-12">
+      <div class="bg-white">
+        <h4><span>Nuestras chapitas</span></h4>
+      </div><!-- cierra bg-white-->
+    </div><!-- cierra col-->    
+
+    <div class="container">
+      <div class="col">              
+        <div class="customer-logos slider">
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="imagenes/pawik/21APRC75DXL._SS200_.jpg" alt="Nuestros medios de pago">
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="imagenes/pawik/21vPMJyj7zL._SS200_.jpg" alt="Nuestros medios de pago">
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="imagenes/pawik/31KlStWm3SL._SS200_.jpg" alt="Nuestros medios de pago">              
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="imagenes/pawik/21APRC75DXL._SS200_.jpg" alt="Nuestros medios de pago">              
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_760266-MLA50481838246_062022-O.webp" alt="Nuestros medios de pago">              
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+          <div class="slick-slider">
+            <div class="slide">
+              <img src="https://puppis.vteximg.com.br/arquivos/ids/176026-1000-1000/252183.png?v=637521108605830000" alt="Nuestros medios de pago">              
+            </div><!-- cierra slide -->
+          </div><!-- cierra slick-slider -->
+        </div>
+      </div><!-- cierra row -->
+    </div><!-- cierra container -->
+  </div><!-- cierra container -->
+</div><!-- cierra lista-medios-de-pago -->
+
+
+<!--<div class="huellas"></div><!-- cierra huellas -->
+
+<div class="variedad-chapitas">
+  <div class="container py-5">
+    <div class="container">
+      <div class="col">              
+      </div><!-- cierra row -->
+    </div><!-- cierra container -->
+  </div><!-- cierra container -->
+</div><!-- cierra container -->
+
+
+
+
+
+
+<div class="preguntas-frecuentes">
+
+
+<div class="container py-5 text-center">
+  <div class="col-12">
+    <div class="bg-white">
+      <h3><span>Preguntas</span>frecuentes</h3>
+    </div><!-- cierra bg-white-->
+  </div><!-- cierra col-->    
+
+  <div class="row">
+    <div class="container pt-5 px-0">
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Qué pasa si pierdo la Chapita Pawik?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              ¿Se pierden los datos?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
             </div>
           </div>
-
-          <div class="col-lg-8 col-md-12">
-            <ul>
-              <li><a href="index.html"><i class="bi bi-house-door-fill icono-home"></i></a></li>
-              <li><a href="quienes-somos.html">Somos Rubik</a></li>
-              <li><a href="productos.html">Nuestros productos</a></li>
-              <li><a class="active" href="pawik.html">¿Qué es Pawik?</a></li>
-              <li><a href="contacto.html">Contactanos</a></li>
-            </ul>  
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Una vez que mi Chapita Pawik tiene los datos cargados: ¿Puedo cambiar alguno de ellos o agregar información extra?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+            </div>
           </div>
-
-          <div class="col-lg-2 col-md-12">
-            <div class="redes-sociales">
-              <ul>
-                <li><a href="https://www.facebook.com/ecodeckarg" target="_blank"><i class="bi bi-facebook" title="Encontranos en Facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
-              </ul>
-            </div><!-- cierra redes-sociales-->
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Otra pregunta...
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Otra pregunta...
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-
-     <div class="footer-bottom">
-      <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Rubik Sublimaciones. Todos los derechos reservados.</p>
-    </div><!-- cierra footer-bottom -->
-  </main>
+    </div>
+  </div>
+</div>
+</div>
 
 
-  <script>
-    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+<div class="fondocat">
+  <div class="fondo-cat">
+    <div class="cat">
+      <div class="ear ear--left">
+      </div>
+      <div class="ear ear--right">
+      </div>
+      <div class="face">
+        <div class="eye eye--left">
+          <div class="eye-pupil">
+          </div>
+        </div>
+        <div class="eye eye--right">
+          <div class="eye-pupil">
+          </div>
+        </div>
+        <div class="muzzle">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-      forEach(hamburgers, function(hamburger) {
-        hamburger.addEventListener("click", function() {
-          this.classList.toggle("is-active");
-        }, false);
-      });
-    }
-  </script>
 
 
-  <script src="js/app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
-  <script src="./script.js"></script>
+
+
+
+<footer >
+  <div class="container py-5">
+    <div class="flex">
+      <div class="col-lg-2 col-md-12">
+        <div class="logo-footer">
+          <a href="index.html"><img src="imagenes/logo/logo-rubik-alternativo.png"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-12">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house-door-fill icono-home"></i></a></li>
+          <li><a href="quienes-somos.html">Somos Rubik</a></li>
+          <li><a href="productos.html">Nuestros productos</a></li>
+          <li><a class="active" href="pawik.html">¿Qué es Pawik?</a></li>
+          <li><a href="contacto.html">Contactanos</a></li>
+        </ul>  
+      </div>
+
+      <div class="col-lg-2 col-md-12">
+        <div class="redes-sociales">
+          <ul>
+            <li><a href="https://www.facebook.com/ecodeckarg" target="_blank"><i class="bi bi-facebook" title="Encontranos en Facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
+          </ul>
+        </div><!-- cierra redes-sociales-->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Rubik Sublimaciones. Todos los derechos reservados.</p>
+</div><!-- cierra footer-bottom -->
+</main>
+
+
+<script>
+  var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+  var hamburgers = document.querySelectorAll(".hamburger");
+  if (hamburgers.length > 0) {
+    forEach(hamburgers, function(hamburger) {
+      hamburger.addEventListener("click", function() {
+        this.classList.toggle("is-active");
+      }, false);
+    });
+  }
+</script>
+
+<script src="js/funciones.js"></script>
+
+<script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>

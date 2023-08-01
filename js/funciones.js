@@ -1,10 +1,3 @@
-$(document).ready(function(){
-  var hamburger = document.querySelector(".hamburger");
-  hamburger.addEventListener("click", function() {
-    hamburger.classList.toggle("is-active");
-  });
-});
-
 // Permite que se ejecute el codigo cuando se halla cargado la pagina
 $(function() {
   $(document).scroll(function() {
@@ -43,7 +36,7 @@ $(document).ready(function(){
   });
   var lastScrollTop = 0;
   $(window).scroll(function () {
-    console.log($(window).scrollTop())
+    
     if ($(window).scrollTop() > 0) {
       $('.navbar').addClass('scrolled');
     }
@@ -54,3 +47,26 @@ $(document).ready(function(){
 });
 
 
+/*Efecto marcas medios de pagor*/
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
