@@ -1,4 +1,92 @@
 
+
+
+
+
+
+
+
+
+.formulario input:focus ~ label,
+.formulario input:valid ~ label,
+.formulario textarea:focus ~ label,
+.formulario textarea:valid ~ label {
+  top: -14px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
+
+
+#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  right: 10%;
+  top: -30px;
+  opacity: .3;
+  z-index: -10;
+  height: 300px;
+  width: 300px;
+
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 10.5px;
+}
+
+
+/* line 2322, ../sass/styles.scss */
+.formulario input:focus ~ .border-bottom-input:before,
+.formulario textarea:focus ~ .border-bottom-input:before {
+  width: 100%;
+}
+/* line 2326, ../sass/styles.scss */
+.formulario input[type=password] {
+  letter-spacing: 0.9em;
+}
+/* line 2329, ../sass/styles.scss */
+.formulario label {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+/* line 2340, ../sass/styles.scss */
+.formulario .border-bottom-input {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+/* line 2344, ../sass/styles.scss */
+.formulario .border-bottom-input:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: rgb(230,0,126,1);
+  transition: 300ms ease all;
+  left: 0%;
+}
 .elementor-shape[data-negative=false].elementor-shape-bottom,
 .elementor-shape[data-negative=true].elementor-shape-top {
   -webkit-transform: rotate(360deg);
@@ -7,7 +95,36 @@
   position: absolute;
 
 }
+.formulario.botones {
+  margin: 0 auto;
 
+}
+.formulario .btn,
+.formulario .reset {
+  margin: 0;
+  width: auto;
+}
+.formulario p{
+  display: inline-block;
+  text-align: left;
+  width: auto;
+    display: inline-block;
+  align-items: center;
+  justify-content: center!important;
+  line-height: normal;
+  margin: 0;
+  color: #e6007e !important;
+ 
+ }
+ .formulario input.file {
+  border-bottom: 1px solid transparent !important; 
+  width: auto;
+  font-family: 'Work Sans', sans-serif;
+  color: #6d6d6d;
+  font-size: 15px;
+  border-radius: 50px;
+  display: flex;
+ }
 /* line 406, ../sass/style.scss */
 .elementor-shape {
   overflow: hidden;
@@ -71,6 +188,15 @@
   font-weight: 400;
   display: inline;
   line-height: 24px;
+}
+.texto-contenido  .activo {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  color: #e6007e !important;
+  text-align: left;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 15px 0;
 }
 .texto-contenido ul {
   padding: 0;
@@ -654,7 +780,7 @@ display: none;
     font-size: 16px;
 }
 .preguntas-frecuentes {
-  background-color: #000;
+  background-color: #;
 }
 main {
   transition: 0.8s;
@@ -724,6 +850,56 @@ main .sec .content h3 {
 main .sec .content p {
   font-size: 1.2em;
   color: #f5f7f8;
+}
+
+#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden; }
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 16px; font-weight: bold; }
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0); }
+}
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0); }
+}
+@-ms-keyframes rotate {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0); }
+}
+@-o-keyframes rotate {
+    from { -o-transform: rotate(360deg); }
+    to { -o-transform: rotate(0); }
+}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
 }
 
 
@@ -1059,8 +1235,8 @@ ul, li, a {
   list-style-type: none;
 }
 .navbar {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.2) 47%, rgba(0,0,0,0.8) 100%);
+  backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.2);
 }
 .navbar-nav {
   display: flex;  
@@ -1300,7 +1476,8 @@ ul, li, a {
 /*CAROUSEL HOME*/
 .carousel-home .carousel-item {
   height: 100vh;
-  max-height: 100%;width: inherit; 
+  max-height: 100%;
+  width: inherit; 
   background-color: rgba(255, 255, 255, .15);   
 }
 .carousel-home .carousel-item:before {
@@ -1341,7 +1518,6 @@ ul, li, a {
 /* line 323, ../sass/styles.scss */
 .carousel-home .carousel-bloque {
   display: flex;
-  justify-content: center;
   align-items: center;
   position: absolute;
   right: 0%;
@@ -1352,9 +1528,8 @@ ul, li, a {
 }
 /* line 333, ../sass/styles.scss */
 .carousel-home .carousel-texto {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
-  width: 80%;
 }
 /* line 337, ../sass/styles.scss */
 .carousel-home .carousel-texto h2 {
@@ -1389,7 +1564,7 @@ ul, li, a {
   line-height: 28px;
   letter-spacing: 0.9px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 35px 0;
   text-align: left;
 }
 
@@ -1496,17 +1671,10 @@ ul, li, a {
 
 /*BOTÓN SCROLL*/
 .scroll {
-  position: absolute;
   bottom:60px;
   left: 50%;
   right: 50%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
   margin: 0 auto;
-  font-size: 0.933rem;
-  color: #e6007e;
   text-decoration: none;
   padding: 10px 10px 10px 40px;
   z-index: 999;
@@ -1575,10 +1743,7 @@ ul, li, a {
 
 /*BIEVENIDOS*/
 #bienvenidos {
-  background-color: #efefef; 
-}
-#bienvenidos .bg-white {
-  background-color: #efefef !important; 
+  background-color: #; 
 }
 /*NUESTROS PRODUCTOS HOME*/
 .flex {
@@ -1594,14 +1759,7 @@ ul, li, a {
   background: rgb(239,104,224);
   background: linear-gradient(0deg, rgba(239,104,224,1) 9%, rgba(129,198,240,1) 100%);
 }
-.overlay {
-  background-image: url(../imagenes/fondo05.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;  
-  padding: 45px 0px;
-}
+
 .categorias {
   margin: 0 10px;
   padding: 15px;
@@ -1610,6 +1768,8 @@ ul, li, a {
   backdrop-filter: blur(4.5px);
   border-radius: 1rem !important;
   flex-basis:100%;
+  position: relative;
+  top: 40px;
 }
 .categorias h4,
 .datos-contacto h4 {
@@ -1683,6 +1843,9 @@ ul, li, a {
   text-shadow: 5px 5px 5px #878585;
   display: inline-block;
 }
+.bg {
+  background-color: transparent;
+}
 .bg h4{
   font-family: 'Varela Round', sans-serif;
   font-size: 30px;
@@ -1706,7 +1869,7 @@ ul, li, a {
   display: inline-block;
 }
 .bg-white p,
-.bg p {
+.maina .bg p {
   font-family: 'Work Sans', sans-serif;  
   font-size: 16px;
   color: #5d5d5d;
@@ -1715,26 +1878,34 @@ ul, li, a {
   padding: 20px 0 0 0;
   margin: 0 auto;
 }
-.texto-contenido,
-.imagen-contenido {
+.texto-contenido{
   height: 100%;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding: 50px 0;
   position: relative;
 }
+.imagen-contenido {
+  margin: 0 auto;
+  
+  padding: 80px 0;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 .imagen-contenido img{
-  height: 250px;
-  width: auto;
+ width: 100%;
   margin: 0 auto;
 }
 .texto-contenido p {
   font-family: 'Work Sans', sans-serif;  
-  font-size: 16px;
+  font-size: 15px;
   color: #5d5d5d;
   font-weight: 400;
   line-height: 24px; 
+  padding: 0;
 }
 .texto-contenido p span {
   font-weight: 700;
@@ -1742,8 +1913,21 @@ ul, li, a {
 .bg-white .text-center  {
   color: grey;
 }
+.texto-contenido h4 {
 
+  font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    color: #e6007e;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: normal;
+    display: block;padding-top: 10px;
+}
+.texto-contenido i {
+      text-shadow: 5px 5px 5px #878585;
 
+}
 
 
 
@@ -1892,8 +2076,11 @@ select {
 
 
 /*PAWIK*/
-.como-funciona,
+
 #cualidades {
+  background-color: #;
+}
+.como-funciona {
   background-color: #6A2382;
 }
 .como-funciona .bg-white {
@@ -2177,7 +2364,6 @@ form .reset {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #c6c6c6;
-  top: -14px;
   font-family: "Lato", sans-serif;
 }
 form label {
@@ -2197,14 +2383,34 @@ form label {
   border-right:0;  
   font-style: italic;  
 }
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+}
+.formulario .border-bottom-input:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: 1px solid #c6c6c6;
+  transition: 300ms ease all;
+  left: 0%;
+}
 .form-control:focus,
 .form-control:focus-visible,
 form textarea:focus {
   color: var(--bs-body-color);
-  background-color: #f3f3f3;
-  border-color: #6d6d6d !important;
+  border-color: #c6c6c6 !important;
   outline: 0;
   box-shadow: 0 0 0 0.0 rgba(13,110,253,.0);
+  font-style: normal;  
+
+}
+.cargar-archivos {
+  padding: 20px 0 0 0;  
+  align-items: center;
+    display: flex;
 }
 form textarea {
   background: none;
@@ -2218,7 +2424,6 @@ form textarea {
   border-bottom: 1px solid #c6c6c6;
   font-family: 'Work Sans', sans-serif;
   outline: none;
-  border-bottom: 1px solid #e6007e;
 }
 form p {
   font-family: 'Work Sans', sans-serif;
@@ -2568,8 +2773,8 @@ footer a.active {
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
 .maina {
-  background: linear-gradient(#3800e7, #8a15ff);
-  height: 100vh;
+  background: linear-gradient(#6A2382, #8a15ff);
+  height: 100%;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Varela Round', sans-serif;
   font-weight: 300;
@@ -2577,6 +2782,22 @@ footer a.active {
   color: white;
   text-align: center;
   z-index: 99;
+}
+.frase-central {
+  padding: 80px 0;
+}
+.cualidades:before {
+  background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 
 .maina h3 {
@@ -2589,7 +2810,7 @@ footer a.active {
 }
 
 .maina {
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -2610,7 +2831,7 @@ footer a.active {
   height: 30em;
   width: 30em;
   border-radius: 30em;
-  background: linear-gradient(#3800e7, #8a15ff);
+  background: linear-gradient(#6A2382, #8a15ff);
   align-self: flex-end;
   -webkit-animation: gradient-fade 8s ease-in-out 3s infinite alternate;
           animation: gradient-fade 8s ease-in-out 3s infinite alternate;
@@ -2621,7 +2842,7 @@ footer a.active {
   height: 10em;
   width: 10em;
   border-radius: 10em;
-  background: linear-gradient(#3800e7, #8a15ff);
+  background: linear-gradient(#6A2382, #8a15ff);
   -webkit-animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
           animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
 }
@@ -2642,7 +2863,7 @@ footer a.active {
   height: 13em;
   opacity: 0.7;
   border-radius: 13em;
-  background: linear-gradient(#15e0ff, #8a15ff);
+  background: linear-gradient(#6A2382, #8a15ff);
   -webkit-animation: rotation 7s linear infinite;
           animation: rotation 7s linear infinite;
 }
@@ -2665,11 +2886,10 @@ footer a.active {
 
 .arrow {
   z-index: 1000;
-  opacity: 0.5;
+  opacity: 1;
   position: absolute;
 }
 .arrow--top {
-  
   left: -5em;
 }
 .arrow--bottom {
@@ -2700,16 +2920,18 @@ footer a.active {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.1;
   -webkit-animation: rotation 38s linear infinite;
           animation: rotation 38s linear infinite;
 }
 
 .draw-in {
   stroke-dasharray: 1000;
-  stroke-dashoffset: 10;
+  stroke-dashoffset: 2;
+  opacity: 0.3;
   -webkit-animation: draw 15s ease-in-out alternate infinite;
           animation: draw 15s ease-in-out alternate infinite;
+
 }
 
 @-webkit-keyframes draw {
@@ -2738,6 +2960,7 @@ footer a.active {
 }
 
 .bounce-1 {
+  opacity: 0.5;
   -webkit-animation-name: bounce-1;
           animation-name: bounce-1;
   -webkit-animation-timing-function: ease;
@@ -2745,6 +2968,7 @@ footer a.active {
 }
 
 .bounce-2 {
+  opacity: 0.5;
   -webkit-animation-name: bounce-2;
           animation-name: bounce-2;
   -webkit-animation-timing-function: ease;
@@ -2752,6 +2976,7 @@ footer a.active {
 }
 
 .bounce-3 {
+  opacity: 0.5;
   -webkit-animation-name: bounce-3;
           animation-name: bounce-3;
   -webkit-animation-timing-function: ease;
@@ -2934,9 +3159,10 @@ footer a.active {
     transition: max-height 0.4s, opacity 0.3s;
     margin-top: 5px;
   }*/
-  .logo-color {
-    margin-top: 5px;
+  .logo-color,
+  .logo-blanco {
     max-height: 40px;
+    margin-top: 0px;
   }
   .scrolled .logo-color {
     opacity: 1;
@@ -2944,7 +3170,9 @@ footer a.active {
     margin-top: 0px;
   }
   .scrolled .logo-blanco {
-    opacity: 0;
+    opacity: 0;    
+    margin-top: 0px;
+max-height: 40px;
   }
   .navbar {
     background-color: #000;
@@ -2968,9 +3196,8 @@ footer a.active {
 
 
 
-
   .navbar-nav.open {
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 75% -10%);
     pointer-events: all;
   }
   nav {
@@ -3009,9 +3236,6 @@ footer a.active {
   } 
   .texto-contenido ul {
     margin: 0;
-  }
-  .imagen-contenido {
-    padding: 0 0 50px 0;
   }
   #como-funciona {
     padding-top:40px;
@@ -3086,6 +3310,8 @@ footer a.active {
     height: auto;
     width: 100%;
   }
+  #rotatingText {
+    right: 14%;
 }
 
 
