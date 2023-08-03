@@ -1618,6 +1618,13 @@ ul, li, a {
 .carousel-control-next, .carousel-control-prev {
   width: 10%;
 }
+.mainah3{
+  width: 60%;
+  display: inline-block;
+}
+.mainah3 span {
+  display: inline-block;
+}
 .btn,
 .reset {
   font-family: 'Manrope', sans-serif;
@@ -1872,11 +1879,20 @@ ul, li, a {
 .maina .bg p {
   font-family: 'Work Sans', sans-serif;  
   font-size: 16px;
-  color: #5d5d5d;
   font-weight: 400;
   line-height: 24px;
   padding: 20px 0 0 0;
   margin: 0 auto;
+}
+.bg-white p {  
+  color: #5d5d5d;
+}
+.maina .bg p {
+    color: #fff;
+width: 60%;
+}
+.maina .bg p a {
+  color: #e6007e;
 }
 .texto-contenido{
   height: 100%;
@@ -3287,6 +3303,13 @@ max-height: 40px;
   }
   .huella-blanca {
     height: 100px;
+  }
+  .mainah3 {
+    width: 100%;
+
+  }
+  .maina__text-wrapper {
+    padding: 2em 0;
   }
 
 }
