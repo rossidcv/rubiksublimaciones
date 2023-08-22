@@ -1,291 +1,259 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvenidos a Rubik Sublimaciones</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>⋆ Bienvenidos a Rubik Sublimaciones ⋆</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/funciones.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>  
-    <script src="js/funciones.js"></script>
+<body>
+  <main>
+    <nav class="navbar navbar-expand-lg fixed-top" data-target=".navbar-collapse" data-toggle="collapse">
+      <div class="container">
+        <a href="index.html">
+          <img src="imagenes/logo/logo-rubik-alternativo.png" class="logo-color img-responsive">
+          <img src="imagenes/logo/logo-rubik-alternativo.png" class="logo-blanco img-responsive">
+        </a>
+        <button class="hamburger hamburger--slider" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill icono-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Somos Rubik</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nuestros productos <i id="flecha-menu" class="bi bi-caret-down-fill"></i>
+              </a>            
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="productos.html">Indumentaria </a></li>
+                <li><a class="dropdown-item" href="productos.html">Bazar</a></li>
+                <li><a class="dropdown-item" href="productos.html">Regalería</a></li>
+                <li><a class="dropdown-item" href="productos.html">Varios</a></li>
+              </ul>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="pawik.html">¿Qué es Pawik?</a>
+            </li> 
+          </ul>
+        </div><!-- cierra collapse  -->
+        <a id="nav-contacto" class="nav-link" href="contacto.html">Contactanos</a>
+      </div><!-- cierra  container-->
+    </nav>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  </head>
+    <div class="carousel-home">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">   
+        <div class="carousel-inner"> 
+          <div class="carousel-item active">
+            <div class="carousel-img bg bg1" alt="Imagen deck ecológico">
+              <div class="container">
+                <div class="wrapper"> 
+                  <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288">
+                    <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
+                      <stop offset="0%" stop-color="rgb(95,54,152)" stop-opacity="1" />
+                      <stop offset="100%" stop-color="rgb(247,109,138)" stop-opacity="1" />
+                    </linearGradient>
+                    <path fill="url(#PSgrad_0)">
+                      <animate repeatCount="indefinite" attributeName="d" dur="5s" values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z; M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4 c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6 c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8 C48.9,198.6,57.8,191,51,171.3z; M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45 c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2 c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7 c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z "/>
+                    </path>
+                  </svg>
+                </div><!-- cierra wrapper -->
+                <div class="carousel-bloque">
+                  <div class="carousel-texto">
+                    <p>⋆ BIENVENIDOS ⋆</p>
+                    <h2 class="animate__animated animate__zoomIn txt anim-text-flow"> SOMOS <span>RUBIK <br> SUBLIMACIONES</span></h2>
+                    <a class="btn btn-primary btn-default animate__animated animate__slideInUp" href="#contacto" role="button">Contactanos <i class="bi bi-arrow-right-circle"></i></a>
+                  </div><!-- cierra carousel-texto-->
+                </div><!-- cierra carousel-bloque-->
+              </div><!-- cierra container-->
+            </div><!-- cierra carousel-img-->
+          </div><!-- cierra carousel-item-->
 
-  <body>
-    <main>
-      <nav class="navbar navbar-expand-lg fixed-top" data-target=".navbar-collapse" data-toggle="collapse">
+          <div class="carousel-item">
+            <div class="carousel-img bg bg2" alt="Imagen deck ecológico">
+              <div class="container">
+                <div class="carousel-bloque">
+                  <div class="carousel-texto">
+                    <h2 class="animate__animated animate__zoomIn txt anim-text-flow"> PRODUCTOS <span>ÚNICOS  <br>Y PERSONALIZADOS</span></h2>
+                    <p class="animate__animated animate__zoomIn"><span>Creamos productos originales con diseño únicos.</span></p>
+                    <a class="btn btn-primary btn-default animate__animated animate__slideInUp" href="#contacto" role="button">Ver productos <i class="bi bi-search"></i></a>
+                  </div><!-- cierra carousel-texto-->
+                </div><!-- cierra carousel-bloque-->
+              </div><!-- cierra container-->
+            </div><!-- cierra carousel-img-->
+          </div><!-- cierra carousel-item-->
+
+          <div class="carousel-item">
+            <div class="carousel-img bg bg3" alt="Imagen deck ecológico">
+              <div class="container">
+                <div class="carousel-bloque">
+                  <div class="carousel-texto">
+                    <h2 class="animate__animated animate__zoomIn txt anim-text-flow"> GRAN VARIEDAD <span> <br>Y MEJOR CALIDAD</span></h2>
+                    <p class="animate__animated animate__zoomIn"><span>Hacemos el trabajo pensando en un producto de la mejor calidad.</span></p>
+                    <a class="btn btn-primary btn-default animate__animated animate__slideInUp" href="#contacto" role="button">Contactanos <i class="bi bi-arrow-right-circle-fill"></i></a>
+                  </div><!-- cierra carousel-texto-->
+                </div><!-- cierra carousel-bloque-->
+              </div><!-- cierra container-->
+            </div><!-- cierra carousel-img-->
+          </div><!-- cierra carousel-item-->
+        </div><!-- cierra carousel-inner-->
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><!-- cierra carousel-inner--> 
+      <a class="scroll" href="#bienvenidos"></a>
+    </div><!-- cierra carousel-home-->
+
+    <div id="bienvenidos">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="gotas-cmyk">            
+            <i class="bi bi-droplet-fill cyan"></i>
+            <i class="bi bi-droplet-fill magenta"></i>
+            <i class="bi bi-droplet-fill amarillo"></i>
+          </div><!-- cierra gotas-cmyk-->
+
+          <div class="bg-transparent pt-5 text-center">
+            <h3 class="txt anim-text-flow"><span>Personalizamos el producto que elijas</span></h3>
+            <p class="text-center">Adaptamos cualquiera de los productos de nuestras colecciones al diseño que quieras. Los diseños no se repiten,<strong> creamos piezas personalizadas y únicas. <a href="contacto.html">¡Consultanos!</a></strong></p>
+          </div><!-- cierra bg-transparent-->
+        </div><!-- cierra row-->
+
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="imagenes/logo/logo-rubik-alternativo.png" class="logo-color img-responsive">
-            <img src="imagenes/logo/logo-blanco.png" class="logo-blanco img-responsive">
-          </a>
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="texto-contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt </span>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <span>laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+              </div><!-- cierra texto-contenido-->
+            </div><!-- cierra col-->
 
-          <button class="hamburger hamburger--slider" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">            
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">    
-            <ul class="navbar-nav nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door-fill icono-home"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quienes-somos.html">Somos Rubik</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nuestros productos<i id="flecha" class="bi bi-caret-down-fill"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="productos.html">Indumentaria </a></li>
-                  <li><a class="dropdown-item" href="productos.html">Bazar</a></li>
-                  <li><a class="dropdown-item" href="productos.html">Regalería</a></li>
-                  <li><a class="dropdown-item" href="productos.html">Varios</a></li>
-                </ul>
-              </li>            
-              <li class="nav-item">
-                <a class="nav-link" href="pawik.html">¿Qué es Pawik?</a>
-              </li>             
-            </ul>
-          </div><!-- cierra collapse -->                
-          <a id="nav-contacto" class="nav-link" href="contacto.html">Contactanos</a>
-        </div><!-- cierra contaciner -->
-      </nav>
+            <div class="col-lg-6 col-md-12">
+              <div class="column parallax_scroll">
+                <div class="imagen-contenido">
+                  <img src="imagenes/bienvenidos.png" mb-30" alt="...">
 
-      <div class="carousel-home">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div><!-- cierra carousel-indicators --> 
-
-          <div class="carousel-inner"> 
-            <div class="carousel-item active">
-              <div class="carousel-img bg bg1" alt="Imagen deck ecológico">
-                <div class="container">
-                  <div class="carousel-bloque">
-                    <div class="carousel-texto">
-                      <h2 class="animate__animated animate__zoomIn"> BIENVENIDOS A
-                        <span> <br>RUBIK SUBLIMACIONES</span></h2>
-                        <p class="animate__animated animate__zoomIn">Creamos productos originales con diseño únicos</p>
-                        <a class="boton-verde btn-default btn animate__animated animate__slideInUp" href="#contacto" role="button">Contactanos <i class="bi bi-arrow-right-circle"></i></a>
-                      </div><!-- cierra carousel-texto-->
-                    </div><!-- cierra carousel-bloque-->
-                  </div><!-- cierra container-->
-                </div><!-- cierra carousel-img-->
-              </div><!-- cierra carousel-item-->
-
-              <div class="carousel-item">
-                <div class="carousel-img bg bg2" alt="Imagen deck ecológico">
-                  <div class="container">
-                    <div class="carousel-bloque">
-                      <div class="carousel-texto">
-                        <h2 class="animate__animated animate__zoomIn"> PRODUCTOS ÚNICOS
-                          <span> <br>Y PERSONALIZADOS</span></h2>                                      
-                          <p class="animate__animated animate__zoomIn">Creamos productos originales con diseño únicos</p>
-                          <a class="boton-verde btn-default btn animate__animated animate__slideInUp" href="#contacto" role="button">Ver productos <i class="bi bi-search"></i></a>
-                        </div><!-- cierra carousel-texto-->
-                      </div><!-- cierra carousel-bloque-->
-                    </div><!-- cierra container-->
-                  </div><!-- cierra carousel-img-->
-                </div><!-- cierra carousel-item-->
-
-                <div class="carousel-item">
-                  <div class="carousel-img bg bg3" alt="Imagen deck ecológico">
-                    <div class="container">
-                      <div class="carousel-bloque">
-                        <div class="carousel-texto">
-                          <h2 class="animate__animated animate__zoomIn"> PRODUCTOS ÚNICOS
-                            <span> <br>Y PERSONALIZADOS</span></h2>
-                            <p class="animate__animated animate__zoomIn">Creamos productos originales con diseño únicos</p>
-                            <a class="boton-verde btn-default btn animate__animated animate__slideInUp" href="#contacto" role="button">Contactanos <i class="bi bi-arrow-right-circle-fill"></i></a>
-                          </div><!-- cierra carousel-texto-->
-                        </div><!-- cierra carousel-bloque-->
-                      </div><!-- cierra container-->
-                    </div><!-- cierra carousel-img-->
-                  </div><!-- cierra carousel-item-->
-                </div>
-              </div>
-            </div>
-
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div><!-- cierra carousel-inner--> 
-          <a class="scroll" href="#bienvenidos"></a>
-        </div><!-- cierra carousel-->
-      </div><!-- cierra carousel-home-->
-
-      <div id="bienvenidos">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="bg-white pt-5 text-center">
-              <h3 style="width: 65%"><span>Personalizamos</span>el<span>producto</span>que<span>elijas</span></h3>
-              <p style="width: 65%" class="text-center">Adaptamos cualquiera de los productos de nuestras colecciones al diseño que quieras. Los diseños no se repiten,<strong> creamos piezas personalizadas y únicas. <a href="contacto.html">¡Consultanos!</a></strong></p>
-            </div><!-- cierra bg-white-->
+                  <svg id="rotatingText" viewBox="0 0 200 200">
+                    <defs>
+                      <path id="circle" d="M 100, 100
+                      m -75, 0
+                      a 75, 75 0 1, 0 150, 0
+                      a 75, 75 0 1, 0 -150, 0
+                      "></path>
+                    </defs>
+                    <text width="400">
+                      <textPath alignment-baseline="top" xlink:href="#circle" class="text">
+                        - &#9679; - Somos Rubik Sublimaciones - &#9679; - Somos Rubik Sublimaciones - &#9679; - Somos Rubik Sublimaciones - &#9679; -
+                      </textPath>
+                    </text>
+                  </svg>
+                </div><!-- cierra imagen-contenido-->
+              </div><!-- cierra column-->
+            </div><!-- cierra col-->
           </div><!-- cierra row-->
-
-          <div class="container">
-            <div class="flex">
-              <div class="col">
-                <div class="texto-contenido">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt </span>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <span>laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div><!-- cierra texto-contenido-->
-              </div><!-- cierra col-->
-
-              <div class="col-lg-6 col-md-12">
-            <div class="imagen-contenido">
-              <img src="imagenes/bienvenidos.png" class="card-img-top mb-30" alt="...">
-
-              <svg id="rotatingText" viewBox="0 0 200 200">
-                <defs>
-                  <path id="circle" d="M 100, 100
-                  m -75, 0
-                  a 75, 75 0 1, 0 150, 0
-                  a 75, 75 0 1, 0 -150, 0
-                  ">
-                </path>
-              </defs>
-              <text width="400">
-                <textPath alignment-baseline="top" xlink:href="#circle" class="text">
-                  - &#9679; - Somos Rubik Sublimaciones - &#9679; - Somos Rubik Sublimaciones - &#9679; - Somos Rubik Sublimaciones - &#9679; -
-                </textPath>
-              </text>
-            </svg>
-          </div><!-- cierra imagen-contenido-->
-        </div><!-- cierra col-->
-            </div><!-- cierra row-->
-          </div><!-- cierra container-->
         </div><!-- cierra container-->
-      </div><!-- cierra bienvenidos-->
+      </div><!-- cierra container-->
+    </div><!-- cierra bienvenidos-->    
 
-      <section class="parallax">
-        <img src="imagenes/sublimacion-03.jpg" id="bg" />
-        <div class="container">
-          <h3 id="text"><span>Productos especiales y personalizados</span></h3>
-        </div>
-        <img src="./img/kisspng-coffee-cup-mug-mug-5a7a6b01917286.9845304315179722255958.png" id="man" class="personaje" />
-        <img src="imagenes/manchas001.png" id="clouds_1" />
-        <img src="imagenes/manchas002.png" id="clouds_2" />
-      </section>
+    <section class="parallax">
+      <img src="./imagenes/sublimacion-03.jpg" id="bg" />
+      <div class="container">
+        <h3 id="text"><span>ELEGÍ TU PRODUCTO PERSONALIZADO </span>
+        <a class="btn btn-primary btn-default animate__animated animate__slideInUp" href="contacto.html" role="button">Contactanos <i class="bi bi-arrow-right-circle-fill"></i></a>
+      </h3>
+      </div><!-- cierra container-->
+      <img src="./imagenes/tazas.png" id="man" class="personaje" />
+      <img src="imagenes/pawik/manchas-01.png" id="clouds_1" />
+      <img src="imagenes/pawik/manchas-05.png" id="clouds_2" />
+    </section>
 
-      <div class="arrow arrow--top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
-          <style>
-          .geo-arrow {
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-            stroke-miterlimit: 10;}
-          </style>
-          <g class="item-to bounce-1">
-            <path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
-          </g>
-          <circle class="geo-arrow item-to bounce-2" cx="194.65" cy="69.54" r="7.96" />
-          <circle class="geo-arrow draw-in" cx="194.65" cy="39.5" r="7.96" />
-          <circle class="geo-arrow item-to bounce-3" cx="194.65" cy="9.46" r="7.96" />
-          <g class="geo-arrow item-to bounce-2">
-            <path class="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
-          </g>
-        </svg>
-      </div>
+    <div class="carousel-productos-home">    
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1"> 
+          <div class="productos-home owl-carousel">
 
-      <div class="arrow arrow--bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="31.35" height="649.9" overflow="visible">
-          <style>
-          .geo-arrow {
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-            stroke-miterlimit: 10;}
-          </style>
-          <g class="item-to bounce-1">
-            <circle class="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
-            <circle class="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
-            <circle class="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
-            <g class="item-to bounce-2">
-              <path class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
-            </g>
-          </g>
-        </svg>
-      </div>
+            <div class="col"> 
+              <a href="#">
+                <div class="card">
+                  <img src="imagenes/productos-home/indumentaria.png" alt="Indumentaria">           
+                  <h4>Indumentaria</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>              
+                </div><!-- cierra card-->
+              </a>
+            </div><!-- cierra col-->
 
-      <div class="maina">
-        <div class="maina__text-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="bg text-center">
-                <h4><span>Elegí</span>tu<span>producto</span>personalizado</h4>
-              </div><!-- cierra bg-white-->
-            </div><!-- cierra row-->
-          </div><!-- cierra container-->
-          <div class="container">
-            <div class="flex">
-              <div class="col">
-                <div class="categorias">
-                  <img src="imagenes/indumentaria.png" alt="an eagle" style="--f:.12;--r:5px">
-                  <h4 class="title">Indumentaria</h4>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                  <a class="btn btn-default btn animate__animated animate__slideInUp" href="productos.html" role="button">Ver productos<i class="bi bi-arrow-right-circle-fill"></i></a>
-                </div><!-- cierra categorias -->
-              </div><!-- cierra col -->
-              <div class="col">
-                <div class="categorias">
-                  <img src="imagenes/bazar.png" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px">
-                  <h4 class="title">Bazar</h4>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                  <a class="btn btn-default btn animate__animated animate__slideInUp" href="productos.html" role="button">Ver productos<i class="bi bi-arrow-right-circle-fill"></i></a>
-                </div><!-- cierra categorias -->
-              </div><!-- cierra col -->
-              <div class="col">
-                <div class="categorias">
-                  <img src="imagenes/otros.png" class="card-img-top mb-30" alt="...">
-                  <h4 class="title">Accesorios</h4>
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                  <a class="btn btn-default btn animate__animated animate__slideInUp" href="productos.html" role="button">Ver productos<i class="bi bi-arrow-right-circle-fill"></i></a>
-                </div><!-- cierra categorias -->
-              </div><!-- cierra col -->
-            </div><!-- cierra flex -->
-          </div><!-- cierra container -->
-        </div><!-- cierra maina__text-wrapper -->
+            <div class="col">
+              <a href="#">
+                <div class="card">
+                  <img src="imagenes/productos-home/bazar.png" alt="Bazar">
+                  <h4>Bazar</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div><!-- cierra servicios-home-->
+              </a>
+            </div><!-- cierra col-->    
 
+            <div class="col">
+              <a href="#">
+                <div class="card">
+                  <img src="imagenes/productos-home/otros.png" alt="Accesorios">
+                  <h4>Accesorios</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div><!-- cierra card-->
+              </a>
+            </div><!-- cierra col-->  
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="dotted-circle" width="352" height="352" overflow="visible">
-          <circle cx="176" cy="176" r="174" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.921,11.9271"/>
-        </svg> 
-      </div><!-- cierra maina -->
-    </main>
+            <div class="col">
+              <a href="contacto.html">  
+                <div class="card">
+                  <img src="imagenes/productos-home/otros.png" alt="Chapita Pawik">
+                  <h4>Chapita Pawik</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div><!-- cierra card-->
+              </a>
+            </div><!-- cierra col-->          
+          </div><!-- cierra servicios-home-->       
+        </div><!-- cierra row-->
+      </div><!-- cierra container-->
+    </div><!-- cierra carousel-productos-home-->
 
     <footer >
       <div class="container py-5">
-        <div class="flex">
+        <div class="row">
           <div class="col-lg-2 col-md-12">
             <div class="logo-footer">
-              <a href="index.html"><img src="imagenes/logo/logo-rubik-alternativo.png"></a>
-            </div>
-          </div>
+              <a href="index.html">
+                <img src="imagenes/logo/logo-rubik-alternativo.png"></a>
+            </div><!-- cierra logo-footer-->
+          </div><!-- cierra col-->
 
           <div class="col-lg-8 col-md-12">
             <ul>
@@ -295,7 +263,7 @@
               <li><a href="pawik.html">¿Qué es Pawik?</a></li>
               <li><a href="contacto.html">Contactanos</a></li>
             </ul>  
-          </div>
+          </div><!-- cierra col-->
 
           <div class="col-lg-2 col-md-12">
             <div class="redes-sociales">
@@ -304,44 +272,61 @@
                 <li><a href="https://www.instagram.com/ecodeckarg" target="_blank"><i class="bi bi-instagram" title="Encontranos en Instagram"></i></a></li>
               </ul>
             </div><!-- cierra redes-sociales-->
-          </div>
-        </div>
-      </div>
+          </div><!-- cierra col-->
+        </div><!-- cierra row-->
+      </div><!-- cierra container-->
     </footer>
 
-    <div class="footer-bottom">
-      <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Rubik Sublimaciones. Todos los derechos reservados.</p>
-    </div><!-- cierra footer-bottom -->
-
-    <div class="social">
-      <ul>
-        <li><a href="http://www.facebook.com" target="_blank" class="facebook bi bi-facebook"></a></li>
-        <li><a href="http://www.instagram.com" target="_blank" class="instagram bi-instagram"></a></li>
-        <li><a href="http://www.whatsapp.com" target="_blank" class="whatsapp bi bi-whatsapp"></a></li>
-      </ul>
-    </div>
+    <input type="checkbox" class="toggle-button">
+    <a href="http://www.whatsapp.com" target="_blank" class="whatsapp bi bi-whatsapp"></a>
   </main>
 
-
-  <script>
-    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-      forEach(hamburgers, function(hamburger) {
-        hamburger.addEventListener("click", function() {
-          this.classList.toggle("is-active");
-        }, false);
-      });
-    }
-  </script>
-
-
-  <!-- JS -->  
-  <script src="js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
   <script src="./script.js"></script>
+    <script src="js/app.js"></script>
+
+  <!-- Efecto Scroll Imagen -->
+  <script>  
+    $(document).ready(function() {
+      $(window).on("load scroll", function() {
+        var parallaxElement = $(".parallax_scroll"),
+        parallaxQuantity = parallaxElement.length;
+        window.requestAnimationFrame(function() {
+          for (var i = 0; i < parallaxQuantity; i++) {
+            var currentElement = parallaxElement.eq(i),
+            windowTop = $(window).scrollTop(),
+            elementTop = currentElement.offset().top,
+            elementHeight = currentElement.height(),
+            viewPortHeight = window.innerHeight * 0.5 - elementHeight * 0.5,
+            scrolled = windowTop - elementTop + viewPortHeight;
+            currentElement.css({
+              transform: "translate3d(0," + scrolled * -0.35 + "px, 0)"
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Efecto Botón Día/Noche -->  
+  <script>
+    var toggleSwitch = document.querySelector(".toggle-button");
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        /*If required*/
+        document.body.classList.add("dark-mode");
+        document.body.classList.remove("light-mode");
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        /*If required*/
+        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark-mode");
+      }
+    }
+    toggleSwitch.addEventListener("change", switchTheme, false);
+  </script>
 
 </body>
 </html>

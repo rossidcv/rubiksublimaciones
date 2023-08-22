@@ -1,4 +1,4 @@
-// Permite que se ejecute el codigo cuando se halla cargado la pagina
+// Cambia tamaño Logo en Menú //
 $(function() {
   $(document).scroll(function() {
       if ($(this).scrollTop() > 1) {
@@ -22,14 +22,12 @@ $(document).ready(function(){
     if(scroll > 0){
       if(!flag){
         $(".navbar").css({"background-color": "rgba(0,0,0,0.5)", "backdrop-filter": "blur(10px)"});
-        $(".ul.navbar.nav li a").css({"color": "#000", "font-weight": "500"});
         flag = true;
       }
     } 
     else{
       if(flag){
         $(".navbar").css({"background-color": "rgba(0,0,0,0.5)", "backdrop-filter": "blur(10px)"});
-        $(".ul.navbar.nav li a").css({"color": "#000", "font-weight": "500"});
         flag = false;
       }
     }     
@@ -46,27 +44,39 @@ $(document).ready(function(){
   });
 });
 
-
-/*Efecto marcas medios de pagor*/
+/*Efecto Botón hamburger*/
 $(document).ready(function(){
-  $('.customer-logos').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  var hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+  });
+});
+
+
+
+
+
+/*Carousel Servicios Home*/
+$(document).ready( function() {
+  $(".productos-home").owlCarousel({
+    margin: 20,
+    loop: true,
     autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    responsive: {
+      0:{
+        items:1,
+        nav: false
+      },
+      600:{
+        items:2,
+        nav: false
+      },
+      1000:{
+        items:3,
+        nav: false
       }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
+    }
   });
 });
