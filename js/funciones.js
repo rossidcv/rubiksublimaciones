@@ -52,31 +52,76 @@ $(document).ready(function(){
   });
 });
 
-
-
-
-
-/*Carousel Servicios Home*/
-$(document).ready( function() {
-  $(".productos-home").owlCarousel({
-    margin: 20,
-    loop: true,
+/*Efecto Chapitas*/
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplayTimeout: 2500,
-    autoplayHoverPause: true,
-    responsive: {
-      0:{
-        items:1,
-        nav: false
-      },
-      600:{
-        items:2,
-        nav: false
-      },
-      1000:{
-        items:3,
-        nav: false
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
       }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+});
+
+// SLIDER HOME
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+  ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
     }
   });
+});
+
+/*Contador*/
+function checkVisible(elm) {
+  var rect = elm.getBoundingClientRect();
+  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+};
+$(document).ready(function() {
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+$(this).text(Math.ceil(now));
+}
+});
+});
+
 });

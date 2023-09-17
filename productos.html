@@ -124,8 +124,8 @@
         <div class="filtro">
           <div class="container">
             <p>FILTRAR POR:
-              <select v-model="tratamiento" name="tratamiento" id="" >
-                <option  id="tratamiento" v-for="tratamiento of tratamientos" >{{tratamiento}}</option>
+              <select v-model="categoria" name="categoria" id="" >
+                <option  id="categoria" v-for="categoria of categoria" >{{categoria}}</option>
               </select>
               <button class="btn btn-success" v-on:click="filtro() ">Buscar</button> 
               <button class="btn btn-secundario" @click="orden()">Ordenar por precio</button>
