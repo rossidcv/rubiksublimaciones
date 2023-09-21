@@ -865,6 +865,7 @@ main .parallax .whatsapp-callaction h3 {
   background-color: rgb(230,0,126,1);
 }
 
+.btn:hover,
 .reset:hover,
 .btn-secundario:hover {
   background-color: rgb(230,0,126,0.5) !important;
