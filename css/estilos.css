@@ -2627,7 +2627,7 @@ select #producto {
   padding: 12px;
 }
 .btn-ordenprecio:hover {
-  background-color: rgb(108,117,125,.5);
+  background-color: rgb(108,117,125,.5)!important;
   border:none;
 }
 .cuadrado-img {
@@ -3116,6 +3116,9 @@ footer a.active {
   .card {
     width: 48%;
   } 
+  select {
+    width: 400px;
+  }
   .item {
     margin:0 auto;
   }
@@ -3215,12 +3218,12 @@ footer a.active {
   #rotatingText {
     height: 250px;
     width: 250px; 
-  }  
+  } 
+  select {
+    width: 300px;
+  } 
   .numero-pasos {
     top: -220px;
-  }
-  .btn-success {
-    margin-bottom: 10px;
   }
 }
 
@@ -3237,5 +3240,8 @@ footer a.active {
   }
   .carousel-home .carousel-texto #rotatingText {
     top: 220px;
+  }
+  .btn-success {
+    margin-bottom: 10px;
   }
 }
