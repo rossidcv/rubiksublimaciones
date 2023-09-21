@@ -131,7 +131,7 @@
                 <option  id="categoria" v-for="categoria of categorias" >{{categoria}}</option>
               </select>
               <button class="btn btn-success" v-on:click="filtro() ">BUSCAR PRODUCTO</button> 
-              <button class="btn btn-ordenprecio" @click="orden()">Ordenar por precio</button>
+              <button class="btn btn-secondary btn-ordenprecio" @click="orden()">Ordenar por precio</button>
             </p>
           </div><!-- cierra container -->
         </div><!-- cierra filtro -->
@@ -142,8 +142,10 @@
             <div class="col col-md-12">
 <section class="lista-productos">
           <div class="container">
-            <div v-for="producto of productos" class="card" style="width:31%; float:left; margin:1% 1%">
-              <div class="cuadrado-img"><img class="card-img-top" :src="producto.foto" alt="Card image"></div>
+            <div v-for="producto of bazar" class="card" style="width:31%; float:left; margin:1% 1%">
+              <div class="cuadrado-img">
+                <img class="card-img-top m-0" :src="producto.foto" alt="Card image">
+              </div>
               <div class="card-body">
                 <p class="card-text" style="text-transform:uppercase; color:#DBDBDB; margin: 0;">{{producto.categoria}}</p>
                 <h4 class="card-title">{{producto.nombre}}</h4>

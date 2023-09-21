@@ -1,36 +1,71 @@
 @charset "UTF-8";
+ol {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  counter-reset: stepnr;
+}
 
-.counter-box {
-  display: block;
-  background: #fff;
-  padding: 40px 20px 37px;
+li:nth-child(6n + 1) { --accent-color: #b8df4e }
+li:nth-child(6n + 2) { --accent-color: #4cbccb }
+li:nth-child(6n + 3) { --accent-color: #7197d3 }
+li:nth-child(6n + 4) { --accent-color: #ae78cb }
+li:nth-child(6n + 5) { --accent-color: #7dc7a4 }
+li:nth-child(6n + 6) { --accent-color: #f078c2 }
+
+ol li {
+  counter-increment: stepnr;
+  width: 18rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2rem);
+  position: relative;
+}
+ol li::before,
+ol li::after {
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--borderS) solid var(--bgColor);
+  line-height: 1.1;
+}
+ol li::before {
+  content: counter(stepnr);
+  color: var(--accent-color);
+  padding-left: 10rem;
+  font-size: 12rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+ol li::after {
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+}
+ol li > * { 
+  width: 7.5rem; 
+}
+ol li .icon { 
+  font-size: 2rem; 
+  color: var(--accent-color); 
   text-align: center;
 }
-
-.counter-box p {
-  font-family:'Montserrat', sans-serif;
-  font-size: 14px;
-  margin: 5px 0 0;
-  padding: 0;
-  color: --bg-color;
-  text-transform: uppercase;
-  font-weight: 600;
+ol li .title { 
+  font-size: 2rem; 
+  font-weight: 500; 
 }
-.counter-box i {
-  font-size: 60px;
-  margin: 0 0 15px;
-  color: #e6007e;
-  text-shadow: 5px 5px 5px #e6007e;
-}
-.counter {
+ol li .descr { 
   font-family: 'Montserrat', sans-serif;
-  font-size: 45px;
-  display: block;
-  font-size: 32px;
-  font-weight: 700;
-  color: #e6007e;
-  line-height: 28px;
+  font-size: 14px;
 }
+
+
 
 
 
@@ -611,6 +646,38 @@ main .parallax .whatsapp-callaction h3 {
   box-shadow: none;
 }
 
+/*Contador*/
+.counter-box {
+  display: block;
+  background: transparent;
+  padding: 0px;
+  text-align: center;
+}
+.counter-box p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 5px 0 0;
+  padding: 0;
+  color: --bg-color;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #e6007e;
+  text-shadow: 5px 5px 5px #e6007e;
+}
+.counter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #e6007e;
+  line-height: 28px;
+}
+
 /*Productos Home*/
 .carousel-nuestros-productos {
   background: url(https://img.freepik.com/fotos-premium/fondo-colorido-moderno-flujo-pinturas-color-onda-forma-liquida-diseno-abstracto_911620-2754.jpg);
@@ -797,7 +864,7 @@ main .parallax .whatsapp-callaction h3 {
   color: #fff;  
   background-color: rgb(230,0,126,1);
 }
-.btn:hover,
+
 .reset:hover,
 .btn-secundario:hover {
   background-color: rgb(230,0,126,0.5) !important;
@@ -1630,7 +1697,6 @@ main .parallax .whatsapp-callaction h3 {
   background: linear-gradient(#6A2382, #8a15ff);
   height: 100%;
   overflow: hidden !important;  
-  margin-bottom: 30px;
   position: relative;
 }
 .fondo-encabezado:before, 
@@ -2141,6 +2207,8 @@ main .parallax .whatsapp-callaction h3 {
 
 .como-funciona {
   background-color: #6A2382;
+  position: relative;
+  z-index: -20;
 }
 .como-funciona-pasos {
   margin: 0 10px;
@@ -2148,6 +2216,7 @@ main .parallax .whatsapp-callaction h3 {
   text-align: center;
   border-radius: 1rem !important;
   flex-basis:100%;
+  position: relative;
 }
 .como-funciona-pasos h4{
   font-family: 'Varela Round', sans-serif;
@@ -2174,12 +2243,32 @@ main .parallax .whatsapp-callaction h3 {
   transform: perspective(400px) var(--_t,rotateY(var(--_a)));
   transition: .5s;
   cursor: pointer;
-  padding: 25px;
+  padding: 0px 25px 55px 0;
 }
 .como-funciona-pasos img:hover {
   clip-path: inset(0 0 0 var(--_f) round var(--r));
   --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
 }
+.numero-pasos{  
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  top: -230px;
+  margin-bottom: -230px !important;
+  display: block;
+  width: inherit;
+  margin: 0 auto;
+}
+.numero-pasos h4{ 
+  font-size: 200px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  color: #fff;
+  opacity: .1; 
+  z-index: -1;
+  position: relative;
+}
+
 .video {
   height: 450px;
   overflow: hidden;
@@ -2469,6 +2558,107 @@ video::-webkit-media-controls {
   border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
 }
 
+/*SECCIÓN PRODUCTOS*/
+.card-img-top {
+  max-width: none;
+  margin: 0 auto;
+  display: block;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+.card-img-top:hover {
+  --escala: 1.1;
+  cursor:pointer;
+}
+.filtro {
+  background-color: #ededed;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+.filtro p {
+  margin: 0;
+  text-align: center;
+}
+select {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: grey;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  margin: 0 10px 0 0;
+  width: 300px;
+}
+select #producto {
+  color: red;
+}
+
+.btn-success {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin:0 5px;
+  border-radius: 50px;  
+  padding: 12px 15px;
+  background-color: rgb(19,172,82,1);
+  border:rgb(19,172,82,1);
+  border: none;
+}
+.btn-success:hover {
+  background-color: rgb(19,172,82,0.7) !important;
+  color: #fff !important;
+  border: none;
+}
+.btn-ordenprecio { 
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff !important;
+  background-color: rgb(108,117,125,1);
+  border:rgb(108,117,125,1);
+  line-height: inherit;
+  display: inline;
+  padding: 12px;
+}
+.btn-ordenprecio:hover {
+  background-color: rgb(108,117,125,.5);
+  border:none;
+}
+.cuadrado-img {
+  height: 300px; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width:31%; 
+  float:left; 
+  margin:1% 1%;
+}
+.card-body {
+  border-top:1px solid #DBDBDB;
+}
+.card-title  {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+  text-transform:uppercase; 
+  font-weight:700; 
+  color:#e6007e;
+  height: 30px;
+}
+.card-text {
+  height: 25px;
+  margin-bottom: 5px;
+}
 /*SECCIÓN CONTACTO*/
 .form-group {
   margin-bottom: 20px;
@@ -2610,6 +2800,125 @@ form p {
 }
 
 
+/*MODIFICAR PRODUCTO*/
+
+.btn-nuevo {
+  background-color: rgb(19,172,82,1);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+.btn-nuevo:hover {
+  background-color: rgb(19,172,82,0.7) !important;
+  color: #fff !important;
+}
+.btn-editar {
+  background-color: rgb(13,110,253,1);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-color: transparent;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  width: 100%;
+}
+.btn-editar:hover {
+  background-color: rgb(13,110,253,0.7) !important;
+  color: #fff !important;
+}
+.btn-danger {
+  background-color: rgb();
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 500;  
+  width: 100%;
+}
+.btn-editar:hover {
+  background-color: rgb(13,110,253,0.7) !important;
+  color: #fff !important;
+}
+.table {
+  background-color:#fcf9f9;
+  table-layout: fixed;
+  width: 100%;  
+}
+.table>thead {
+  background-color: #e6007e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600 !important;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.table-bordered>:not(caption)>*>* {
+  font-weight: 600 !important;
+  text-align: center;
+  border-bottom: 1px solid #e6007e;
+}
+
+/*MODIFICAR PRODUCTO*/ 
+.fondo-modificar-producto {
+  background-image: linear-gradient(180deg, rgb(0,0,0,0.8) 61%, rgba(0,0,0,0.9) 95%), url(../img/carousel-home-02.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.fondo-modificar-producto h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e6007e;
+  text-shadow: 5px 5px 5px #545454;
+  text-align: center;
+}
+.fondo-modificar-producto form {
+  background-color: aliceblue;
+  width: 50%;
+  margin:0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.fondo-modificar-producto label {  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px; 
+  color: #6d6d6d;
+  text-align: left;
+  float: left;
+}
 
 
 
@@ -2802,9 +3111,18 @@ footer a.active {
   .nuestras-chapitas .pawik, 
   .nuestras-chapitas .pawik span {
     padding: 50px 0;
-  }  
+  } 
+  .card {
+    width: 48%;
+  } 
   .item {
     margin:0 auto;
+  }
+  .numero-pasos {
+    top: -200px;
+  }
+  select {
+    margin: 10px 0;
   }
   footer .logo-footer img {
     margin:0 auto;
@@ -2861,6 +3179,9 @@ footer a.active {
   .nuestras-chapitas .pawik {
     font-size: 45px;
   }
+  .card {
+    width: 100% !important;
+  }
   footer ul {
     display: block;
   }
@@ -2880,6 +3201,10 @@ footer a.active {
   .carousel-home .carousel-texto h2 span {
     font-size: 35px;
   }
+  #portada-pawik a {
+    display: flex;
+    margin-bottom: 20px;
+}
   .nuestras-chapitas .pawik {
     font-size: 35px;
   }
@@ -2889,6 +3214,12 @@ footer a.active {
   #rotatingText {
     height: 250px;
     width: 250px; 
+  }  
+  .numero-pasos {
+    top: -220px;
+  }
+  .btn-success {
+    margin-bottom: 10px;
   }
 }
 
@@ -2902,5 +3233,8 @@ footer a.active {
   }
   .slider-card p {
     height: 80px;
+  }
+  .carousel-home .carousel-texto #rotatingText {
+    top: 220px;
   }
 }

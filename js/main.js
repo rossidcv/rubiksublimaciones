@@ -4,12 +4,14 @@ if (document.getElementById("app")) {
     createApp ({
         data() {
             return {
-                url: "https://monicadcv83.pythonanywhere.com/productos",
+                url: "http://localhost:5000/productos",
                 productosTodos: [],
                 productos: [],
                 errored: false,
                 loading: true,
-                tratamiento: "Todos",
+                categorias:[],
+                precios: [],
+                categoria: "Todos",
                 precio: "Todos"
             }
         },
@@ -51,17 +53,17 @@ if (document.getElementById("app")) {
                     })
             },
             filtro() {
-                this.productos = this.productosTodos.filter( producto=>(producto.tratamiento == this.tratamiento || this.tratamiento==="Todos") && (producto.precio == this.precio || this.precio==="Todos" ))                
+                this.productos = this.productosTodos.filter( producto=>(producto.categoria == this.categoria || this.categoria==="Todos") && (producto.precio == this.precio || this.precio==="Todos" ))                
             },
             orden() {
                 this.productos.sort((a, b) => { return (a.precio > b.precio ? 1 : -1) } )// si retorna 1 lo invierte, si retorna -1 lo deja como esta 
             },
             cargarListasDesplegables() {
-                this.tratamientos =['Todos']
+                this.categorias =['Todos']
                 this.precios = ['Todos']
                 for (producto of this.productosTodos) {
-                  if (producto.tratamiento !== '' && this.tratamientos.indexOf(producto.tratamiento) < 0) {
-                    this.tratamientos.push(producto.tratamiento)
+                  if (producto.categoria !== '' && this.categorias.indexOf(producto.categoria) < 0) {
+                    this.categorias.push(producto.categoria)
                   }
                   if (producto.precio !== '' && this.precios.indexOf(producto.precio) < 0) {
                     this.precios.push(producto.precio)
