@@ -2612,6 +2612,9 @@ video::-webkit-media-controls {
 }
 
 /*SECCIÓN PRODUCTOS*/
+.lista-productos {
+  padding: 0;
+}
 .card-img-top {
   max-width: none;
   margin: 0 auto;
@@ -3258,6 +3261,7 @@ footer a.active {
   }
   .card {
     width: 100% !important;
+    margin: 3% 1%;
   }
   .counter-box {
     margin: 25px 0;
@@ -3300,6 +3304,9 @@ footer a.active {
   } 
   .numero-pasos {
     top: -220px;
+  }
+  .card {
+    margin: 5% 1%;
   }
 }
 
