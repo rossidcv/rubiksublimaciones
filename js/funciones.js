@@ -125,4 +125,3 @@ $(this).text(Math.ceil(now));
 });
 
 });
-
