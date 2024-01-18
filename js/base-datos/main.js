@@ -56,7 +56,7 @@ if (document.getElementById("app")) {
                 this.productos = this.productosTodos.filter( producto=>(producto.categoria == this.categoria || this.categoria==="Todos") && (producto.precio == this.precio || this.precio==="Todos" ))                
             },
             orden() {
-                this.productos.sort((a, b) => a.precio - b.precio);
+                this.productos.sort((a, b) => { return (a.precio > b.precio ? 1 : -1) } )// si retorna 1 lo invierte, si retorna -1 lo deja como esta 
             },
             cargarListasDesplegables() {
                 this.categorias =['Todos']
@@ -64,9 +64,6 @@ if (document.getElementById("app")) {
                 for (producto of this.productosTodos) {
                   if (producto.categoria !== '' && this.categorias.indexOf(producto.categoria) < 0) {
                     this.categorias.push(producto.categoria)
-                  }
-                  if (producto.precio !== '' && this.precios.indexOf(producto.precio) < 0) {
-                    this.precios.push(producto.precio)
                   }
                 }
             }
