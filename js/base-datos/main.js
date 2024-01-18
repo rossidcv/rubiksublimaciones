@@ -56,7 +56,7 @@ if (document.getElementById("app")) {
                 this.productos = this.productosTodos.filter( producto=>(producto.categoria == this.categoria || this.categoria==="Todos") && (producto.precio == this.precio || this.precio==="Todos" ))                
             },
             orden() {
-                this.productos.sort((a, b) => { return (a.title > b.title ) } )// si retorna 1 lo invierte, si retorna -1 lo deja como esta 
+                this.productos.sort((a, b) => { return (a.text > b.text ? 1 : -1) } )// si retorna 1 lo invierte, si retorna -1 lo deja como esta 
             },
             cargarListasDesplegables() {
                 this.categorias =['Todos']
