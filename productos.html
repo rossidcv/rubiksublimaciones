@@ -143,7 +143,7 @@
               <div class="container">
                 <div v-for="producto of productos" class="card">
                   <div class="cuadrado-img">              
-                    <img class="card-img-top m-0 zoom" :src="producto.foto" alt="Card image">
+                    <img class="card-img-top m-0 zoom" :src="elemento.photoUrl" :alt="elemento.foto">
                   </div><!-- cierra producto -->
                   <div class="card-body">
                     <p class="card-text" style="text-transform:uppercase;">{{producto.categoria}}</p>
