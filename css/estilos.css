@@ -2616,7 +2616,8 @@ video::-webkit-media-controls {
   padding: 0;
 }
 .card-img-top {
-  max-width: none;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
   transform: scale(var(--escala, 1));
@@ -2685,6 +2686,8 @@ select #producto {
   border:none;
 }
 .cuadrado-img {
+  height: 18rem;
+  object-fit: cover;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -2718,12 +2721,9 @@ select #producto {
 }
 
 /*SECCIÓN MIS IMÁGENES*/
-.misimagenes .card-img-top {
-  
-}
 .misimagenes {
   display: contents;
-   margin: 1% 1%;
+  margin: 1% 1%;
 }
 /*SECCIÓN CONTACTO*/
 .form-group {
@@ -3261,6 +3261,9 @@ footer a.active {
   .card {
     width: 48%;
     margin: 3% 1%;
+  }
+  .card-title {
+    font-size: 20px;
   }
   .counter-box {
     margin: 25px 0;
