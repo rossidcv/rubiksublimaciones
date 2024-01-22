@@ -2680,6 +2680,7 @@ select #producto {
   color: #fff !important;
   background-color: rgb(108,117,125,1);
   border:rgb(108,117,125,1);
+  border-radius: 50px;  
   line-height: inherit;
   display: inline;
   padding: 12px;
