@@ -3195,15 +3195,13 @@ footer a.active {
   } 
   select {
     width: 400px;
+    margin: 10px 0;
   }
   .item {
     margin:0 auto;
   }
   .numero-pasos {
     top: -200px;
-  }
-  select {
-    margin: 10px 0;
   }
   footer .logo-footer img {
     margin:0 auto;
@@ -3305,6 +3303,7 @@ footer a.active {
   } 
   select {
     width: 300px;
+    margin: 10px 0;
   } 
   .numero-pasos {
     top: -220px;
@@ -3321,6 +3320,9 @@ footer a.active {
   }
   .btn-ordenprecio {
     padding:12px 5px;
+  }
+  .btn-success {
+    margin-bottom:10px;
   }
 }
 
