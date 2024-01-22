@@ -1,4 +1,5 @@
 @charset "UTF-8";
+  /*max-width: max-content;*/
 
 *,
 *::after,
@@ -287,7 +288,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0%;
+  right: 5%;
   left: 5%;
   top: 0;
   bottom: 0;
@@ -2616,6 +2617,8 @@ video::-webkit-media-controls {
   padding: 0;
 }
 .card-img-top {
+      /*width: max-content;
+    height: 100%;*/
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -2624,7 +2627,7 @@ video::-webkit-media-controls {
   transition: transform 0.25s;
 }
 .card-img-top:hover {
-  --escala: 1.1;
+  --escala: 1.05;
   cursor:pointer;
 }
 .filtro {
@@ -2686,7 +2689,6 @@ select #producto {
   border:none;
 }
 .cuadrado-img {
-  height: 18rem;
   object-fit: cover;
   overflow: hidden;
   display: flex;
@@ -2701,7 +2703,7 @@ select #producto {
   float:left; 
   margin:1% 1%;
   border-radius: 10px;
-  box-shadow: 8px 8px 8px #DBDBDB;  
+  box-shadow: 0px 5px 5px #DBDBDB;  
 }
 .card-body {
   border-top:1px solid #DBDBDB;
@@ -3285,7 +3287,7 @@ footer a.active {
 @media (max-width: 576px) { 
   .carousel-home .carousel-texto h2,
   .carousel-home .carousel-texto h2 span {
-    font-size: 35px;
+    font-size: 30px;
   }
   #portada-pawik a {
     display: flex;
